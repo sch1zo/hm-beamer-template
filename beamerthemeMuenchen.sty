@@ -42,9 +42,9 @@
 
 % The option [useinfofooter] displays the full footer instead of only the slide numbers.
 % Only slide numbers is deafult
-\newif\ifbeamer@useinfofooter
-\beamer@useinfofooterfalse
-\DeclareOptionBeamer{useinfofooter}{\beamer@useinfofootertrue}
+\newif\ifbeamer@infofooter
+\beamer@infofooterfalse
+\DeclareOptionBeamer{infofooter}{\beamer@infofootertrue}
 
 \ProcessOptionsBeamer
 
@@ -73,7 +73,7 @@
     \insertframetitle
   \fi
 }
-\ifbeamer@useinfofooter
+\ifbeamer@infofooter
   \useoutertheme{infofooter}
 \else
   \ifbeamer@noslidenumbers
